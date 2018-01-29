@@ -9,8 +9,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+<<<<<<< HEAD
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+=======
+>>>>>>> b2efb9a5f82b539fdcc8e2efb1a36b49efdbf088
 
 @Entity
 public class Categoria implements Serializable {
@@ -30,7 +33,10 @@ public class Categoria implements Serializable {
 		this.nome = nome;
 	}
 	
+<<<<<<< HEAD
 	@JsonManagedReference
+=======
+>>>>>>> b2efb9a5f82b539fdcc8e2efb1a36b49efdbf088
 	@ManyToMany(mappedBy="categorias")	
 	private List<Produto> produtos = new ArrayList<>();
 
